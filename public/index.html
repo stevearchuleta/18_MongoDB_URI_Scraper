@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mongo Scraper</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/materia/bootstrap.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="/">Mongo Scraper</a>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/saved">Saved Articles</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-danger scrape-new">SCRAPE NEW ARTICLES!</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-danger clear">CLEAR ARTICLES!</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <div class="overlay">
+  </div>
+  <div class="background-image">
+  </div>
+  <div class="caption">
+    <h1>Mongo Scraper</h1>
+    <p>New York Times Edition</p>
+  </div>
+</div>
+<div class="container-fluid article-container">
+  <div data-_id="5cbcb6b2269fe80015ff675e" class="card">
+    <div class="card-header">
+      <h3>
+        <a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/04/21/books/the-week-in-books.html">The Week in Books</a>
+        <a class="btn btn-success save">Save Article</a>
+      </h3>
+    </div>
+    <div class="card-body">Robert Caro, Abby Wambach, the Mueller report and more.</div>
+  </div>
+    <div data-_id="5cbcb6b2269fe80015ff675d" class="card">
+    <div class="card-header">
+      <h3>
+        <a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/04/19/fashion/weddings/deborah-kaplan-jacoby-and-mitchell-messinger-are-married-in-los-angeles.html">Undeniable Connections Waiting to Be Discovered</a>
+        <a class="btn btn-success save">Save Article</a>
+      </h3>
+    </div>
+    <div class="card-body">She saw herself in the characters in an animated Disney film. The hopeful tune sung by a lonely volcano to another spoke to her heart.</div>
+  </div>
+    <div data-_id="5cbcb6b2269fe80015ff675b" class="card">
+    <div class="card-header">
+      <h3>
+        <a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/04/20/arts/11-of-our-best-weekend-reads.html">11 of Our Best Weekend Reads</a>
+        <a class="btn btn-success save">Save Article</a>
+      </h3>
+    </div>
+    <div class="card-body">The soul of France. Disappearing glaciers. The most chaotic place on the internet. Bauhaus at 100. And more.</div>
+  </div>
+    <div data-_id="5cbcb6b2269fe80015ff675c" class="card">
+    <div class="card-header">
+      <h3>
+        <a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/04/19/opinion/sunday/progressive-capitalism.html">Progressive Capitalism Is Not an Oxymoron</a>
+        <a class="btn btn-success save">Save Article</a>
+      </h3>
+    </div>
+    <div class="card-body">We can save our broken economic system from itself.</div>
+  </div>
+    <div data-_id="5cbcb6b2269fe80015ff675a" class="card">
+    <div class="card-header">
+      <h3>
+        <a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/04/21/us/politics/democrats-impeachment-2020.html">2020 Democrats Face Quandary Over Calls for Trump ImpeachmentRussians Sought Back Channels to Trump Through the Business World“There’s nothing wrong with taking information from Russians,” said Rudolph W. Giuliani, Mr. Trump’s lawyer.</a>
+        <a class="btn btn-success save">Save Article</a>
+      </h3>
+    </div>
+    <div class="card-body">The inquiry revealed how Russia’s efforts to connect with Mr. Trump and his team spun into high gear after the election.</div>
+  </div>
+    <div data-_id="5cbcb6b2269fe80015ff6759" class="card">
+    <div class="card-header">
+      <h3>
+        <a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/04/21/world/asia/sri-lanka-history-civil-war.html">Sri Lanka’s Long History of Violence</a>
+        <a class="btn btn-success save">Save Article</a>
+      </h3>
+    </div>
+    <div class="card-body">The small island nation is famous for its beauty, but also for a brutal three-decade civil war and sectarian tensions that still simmer.</div>
+  </div>
+   </div>
+
+<footer class="footer">
+  <div class="container">
+    <p>New York Times Mongo Scraper</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+<script src="/assets/javascript/index.js"></script>
+
+</body>
+
+</html>
