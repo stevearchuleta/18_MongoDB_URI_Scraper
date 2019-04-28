@@ -4,7 +4,7 @@ $(document).ready(function () {
       event.preventDefault();
       const id = $(this).attr("data");
       $.ajax(`/remove/${id}`, {
-          type: "PUT"
+          type: "DELETE"
       }).then(function(){
           location.reload();
       })

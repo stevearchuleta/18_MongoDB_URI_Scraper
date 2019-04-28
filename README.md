@@ -3,6 +3,12 @@
 
 https://week18homework.herokuapp.com/
 https://git.heroku.com/week18homework.git
+https://stevearchuleta.github.io/MongoDB_URI_week18HW/
+https://github.com/stevearchuleta/MongoDB_URI_week18HW
+
+Creating mongolab on ⬢ week18homework... free
+Welcome to mLab.  Your new subscription is being created and will be available shortly.  Please consult the mLab Add-on Admin UI to check on its progress.
+Created mongolab-rugged-61427 as MONGODB_URI
 
 The New York Time Scraper
 Overview
