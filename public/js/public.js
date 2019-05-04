@@ -61,11 +61,12 @@ $(document).ready(function () {
       $('#note-modal').modal('toggle');
   });
 
-  $(".save-btn").click(function(event) {
+  $(document).on("click", ".save-btn", function(event) {
+      console.log("Clicked");
       event.preventDefault();
       const button = $(this);
       const id = button.attr("id");
-      $.ajax(`/save/${id}`, {
+      $.ajax(`/articles/${id}`, {
           type: "PUT"
       }).then(function() {
           const alert = `

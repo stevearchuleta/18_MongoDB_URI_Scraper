@@ -115,8 +115,6 @@ app.get("/articles", function(req, res) {
 });
 
 
-
-
 // Route for saving/updating an Article's associated Note
 app.post("/articles/:id", function(req, res) {
   // Create a new note and pass the req.body to the entry
@@ -138,8 +136,13 @@ app.post("/articles/:id", function(req, res) {
     });
 });
 
-
-
+app.put("/articles/:id", function(req, res) {
+  db.Article.findOneAndUpdate({_id: req.params.id},{$set:{saved:true}}).then((docs)=>{
+    res.json(docs);
+  }).catch((err)=>{
+    res.json(err);
+  })
+})
 
 
 
