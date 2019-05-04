@@ -1,32 +1,23 @@
-var express = require("express");
-var logger = require("morgan");
 var mongoose = require("mongoose");
 
-// Our scraping tools
-// Axios is a promised-based http library, similar to jQuery's Ajax method
-// It works on the client and on the server
-var axios = require("axios");
-var cheerio = require("cheerio");
+// Save a reference to the Schema constructor
+var Schema = mongoose.Schema;
 
-// Require all models
-var db = require("./models");
+// Using the Schema constructor, create a new UserSchema object.
+var NoteSchema = new Schema({
+  // `title` is required and of type String
+  title: {
+    type: String,
+  },
+  // `link` is required and of type String
+  link: {
+    type: String,
+  },
+});
 
-var PORT = 3000;
+var Note = mongoose.model("Note", NoteSchema);
 
-// Initialize Express
-var app = express();
-
-// Configure middleware
-
-// Use morgan logger for logging requests
-app.use(logger("dev"));
-// Parse request body as JSON
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-// Make public a static folder
-app.use(express.static("public"));
-
-// Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/MongoDB_URI_week18HW", { useNewUrlParser: true });
+// This creates model from the above schema, using mongoose's model method
+var note = mongoose.model("Article", NoteSchema);
 
 module.exports = Note;
